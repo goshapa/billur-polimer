@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Billur Polimer — производство полиэтиленовых пакетов и плёнки в Ташкентской области. Подготовьте запрос на расчёт партии.">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Billur Polimer — упаковка для бизнеса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <header class="wrap header">
+    <a class="brand" href="#" aria-label="Billur Polimer"><span class="mark" aria-hidden="true">✳</span><span>BILLUR<br>POLIMER</span></a>
+    <nav aria-label="Главная навигация"><a href="#products">Продукция</a><a href="#factory">Производство</a><a href="#contacts">Контакты</a></nav>
+    <a class="pill outline" href="#order">Запросить расчёт <span>↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> ПРОИЗВОДСТВО УПАКОВКИ</p>
+        <h1 id="hero-title">Упаковка<br>для вашего<br><em>бизнеса.</em></h1>
+        <p class="intro">Полиэтиленовые пакеты с вашим логотипом и упаковочная плёнка от производителя.</p>
+        <a class="pill primary" href="#order">Рассчитать заказ <span>↗</span></a>
+      </div>
+      <figure class="hero-art"><img src="hero.webp" alt="Концепт синего полиэтиленового пакета Billur Polimer" fetchpriority="high"><figcaption>КОНЦЕПТ УПАКОВКИ</figcaption></figure>
+    </section>
+    <div class="ribbon"><span><b>✳</b> 15+ ЛЕТ ОПЫТА</span><span><b>✳</b> ПЕЧАТЬ ЛОГОТИПА</span><span><b>✳</b> ТАШКЕНТСКАЯ ОБЛАСТЬ</span></div>
+    <section id="products" class="section">
+      <div class="section-head"><div><p class="eyebrow"><span class="dot"></span> ПРОДУКЦИЯ</p><h2>Форматы упаковки</h2></div><p>Выберите подходящий формат и уточните доступные размеры и параметры у цеха.</p></div>
+      <div class="cards">
+        <article><div class="sample sample-one" role="img" aria-label="Иллюстрация пакета с вырубной ручкой"></div><div class="card-label"><div><h3>Пакеты с ручкой</h3><p>Для магазинов и брендированной упаковки</p></div><a href="#order" data-product="handle" class="round" aria-label="Запросить пакет с ручкой">↗</a></div></article>
+        <article><div class="sample sample-two" role="img" aria-label="Иллюстрация пакета-майки"></div><div class="card-label"><div><h3>Пакеты-майки</h3><p>Для покупок и повседневной торговли</p></div><a href="#order" data-product="vest" class="round" aria-label="Запросить пакет-майку">↗</a></div></article>
+        <article><div class="sample sample-three" role="img" aria-label="Иллюстрация рулона плёнки"></div><div class="card-label"><div><h3>Плёнка в рулонах</h3><p>Для фасовки и упаковки продукции</p></div><a href="#order" data-product="film" class="round" aria-label="Запросить плёнку">↗</a></div></article>
+      </div>
+      <p class="caption">Иллюстрации показывают примеры форматов.</p>
+    </section>
+    <section id="factory" class="factory">
+      <a class="video" href="https://www.youtube.com/watch?v=TLLPPkPbMEQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/TLLPPkPbMEQ/hqdefault.jpg" alt="" loading="lazy"><span class="round" aria-hidden="true">▶</span><span class="video-label">Видео Billur Polimer ↗</span></a>
+      <div class="factory-copy"><p class="eyebrow"><span class="dot"></span> ПРОИЗВОДСТВО</p><h2>Цех Billur<br>Polimer</h2><p>Выпускаем полиэтиленовые пакеты и плёнку в Зангиатинском районе Ташкентской области.</p><p>Печатаем ваш логотип на пакетах. Укажите назначение, размер и объём партии, чтобы обсудить параметры и стоимость заказа.</p></div>
+    </section>
+    <section id="order" class="order">
+      <div><p class="eyebrow"><span class="dot"></span> ЗАКАЗ</p><h2>Рассчитаем<br>вашу партию</h2><p>Заполните параметры. Сайт подготовит текст, который можно отправить цеху в Instagram.</p></div>
+      <form id="quote">
+        <label>Формат<select name="product" required><option value="">Выберите формат</option><option value="handle">Пакеты с ручкой</option><option value="vest">Пакеты-майки</option><option value="film">Плёнка в рулонах</option><option value="other">Нужна консультация</option></select></label>
+        <div class="fields"><label>Размер<input name="size" placeholder="Например, 30 × 40 см" maxlength="80"></label><label>Объём партии<input name="quantity" placeholder="Например, 5 000 шт." maxlength="80" required></label></div>
+        <label>Комментарий<textarea name="details" rows="3" maxlength="600" placeholder="Назначение, толщина, цвет или пожелания по печати"></textarea></label>
+        <button class="pill primary" type="submit">Подготовить запрос <span>↗</span></button>
+      </form>
+    </section>
+  </main>
+  <footer id="contacts" class="wrap footer"><a class="brand" href="#"><span class="mark" aria-hidden="true">✳</span><span>BILLUR<br>POLIMER</span></a><p>Ташкентская область<br>Зангиатинский район</p><a href="tel:+998911378686">+998 91 137 86 86</a><a href="https://www.instagram.com/billur_polimer_/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/watch?v=TLLPPkPbMEQ" target="_blank" rel="noopener">YouTube ↗</a></footer>
+  <dialog id="request" aria-labelledby="request-title">
+    <div class="dialog-head"><h3 id="request-title">Ваш запрос</h3><form method="dialog"><button class="round" aria-label="Закрыть">×</button></form></div>
+    <label>Скопируйте текст и отправьте его в Instagram<textarea id="message" rows="7" readonly></textarea></label>
+    <div class="dialog-actions"><button type="button" id="copy" class="pill outline">Скопировать</button><a class="pill primary" href="https://ig.me/m/billur_polimer_" target="_blank" rel="noopener">Открыть Direct ↗</a></div>
+    <p id="status" role="status"></p>
+  </dialog>
+</body>
+</html>
