@@ -50,10 +50,9 @@ h3{font-size:clamp(18px,2vw,27px);letter-spacing:-.055em;line-height:1.1;font-we
 .round{display:grid;place-items:center;flex:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:white;color:var(--ink);font-size:22px}
 .round:hover{background:var(--blue);color:white;border-color:var(--blue)}
 .factory{display:grid;grid-template-columns:1.05fr .95fr;min-height:420px;background:#1c1c24;color:white;border-radius:27px;overflow:hidden}
-.video{position:relative;display:grid;place-items:center;min-height:300px;background:var(--blue)}
-.video img{position:absolute;inset:0;filter:brightness(.75)}
-.video .round{z-index:1;width:64px;height:64px;border:0}
-.video-label{position:absolute;bottom:20px;left:20px;border-radius:30px;background:#1c1c24;padding:9px 14px;font-size:12px}
+.factory-photo{position:relative;min-height:300px;background:#303541}
+.factory-photo img{position:absolute;inset:0}
+.factory-photo figcaption{position:absolute;bottom:20px;left:20px;border-radius:30px;background:#1c1c24;padding:9px 14px;font-size:12px}
 .factory-copy{padding:clamp(28px,5vw,70px);align-self:center}
 .factory-copy .dot{background:var(--lime)}
 .factory-copy>p:not(.eyebrow){color:#d1d1dd;margin-top:18px}
